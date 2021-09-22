@@ -1,0 +1,221 @@
+@font-face{
+    src: url(./font/Open_Sans/OpenSans-BoldItalic.ttf);
+    font-family:OpenSans-Bold;
+    }
+    @font-face{
+    src: url(./font/Open_Sans/OpenSans-Regular.ttf);
+    font-family: OpenSans-Regular;
+    }
+    @font-face{
+    src: url(./font/Open_Sans/OpenSans-SemiBoldItalic.ttf);
+    font-family: OpenSans-SemiBoldItalic;
+    }   
+    @font-face{
+    src: url(./font/Poppins/Poppins-Bold.ttf);
+    font-family: Poppins-bold;
+    }
+    @font-face{
+    src: url(./font/Poppins/Poppins-MediumItalic.ttf);
+    font-family: Poppins-medium-italic;
+    }
+    @font-face{
+    src: url(./font/Poppins/Poppins-Regular.ttf);
+    font-family:Poppins-Regular;
+    }
+    @font-face{
+    src: url(./font/Poppins/Poppins-SemiBold.ttf);
+    font-family:Poppins-SemiBold;
+    }
+    body{      
+    cursor: pointer;
+    }
+    *{
+    padding: 0;
+    margin: 0;
+    
+    } 
+    
+    #form-bg{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    }
+    #form-bg h1{
+    font-size: 27px;
+    font-family:  Poppins-bold,AdobeInvisFont,MyriadPro-Regular;
+    color: #464646;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-align: center;
+    }
+    .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 11px rgba(0,108,110,.11);
+    border-radius: 10px;
+    border-left:5px solid #0443C0;
+    }
+    
+    #form-bg img{
+    height: 30px;
+  
+    padding: 4px;
+    border-right: 1px solid #d3d3d3;
+    }
+    
+    #form-bg .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 0px;
+    }
+    
+    
+    
+    #login-form{
+        position: absolute;
+        z-index: 99;
+        right: 45%;
+    }
+    #form-bg input::placeholder{
+    font-size: 18px;
+    font-family:Poppins-medium-italic,AdobeInvisFont,MyriadPro-Regular ;
+    color:#939598 ;
+    }
+    .input-field:focus, textarea:focus, select:focus{
+    outline: none;
+    }
+    #form-bg .form-check-label{
+    font-size: 18px;
+    font-family:Poppins-Regular,AdobeInvisFont,MyriadPro-Regular;
+    color:#464646 ;
+    }
+    #form-bg .form-check-input{
+    width:16px;
+    height: 18px;
+    }
+    #form-bg a{
+    font-size: 18px;
+    font-family:Poppins-SemiBold,AdobeInvisFont,MyriadPro-Regular;
+    color:#464646 !important ;
+    text-align: end;
+    }
+    #form-bg .btn-1{
+    background-color: #0443C0 !important;
+    font-size: 18px !important;
+    font-family:Poppins-SemiBold,AdobeInvisFont,MyriadPro-Regular;
+    color:#fff ;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    }
+    #signup{
+    background-image: url(./images/Untitled-1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    }
+    #signup h1{
+    font-family: Poppins-Bold,AdobeInvisFont,MyriadPro-Regular;
+    color: #fff;
+    font-size: 23px;
+    }
+    #signup h2{
+    font-family:OpenSans-Regular,AdobeInvisFont,MyriadPro-Regular;
+    color: #fff;
+    font-size: 22px;
+    }
+    #signup h3{
+    font-family:OpenSans-SemiBoldItalic,OpenSans-Regular,AdobeInvisFont,MyriadPro-Regular;
+    color: #fff;
+    font-size: 25px;
+    }
+    #signup h4{
+        font-family: OpenSans-Bold,AdobeInvisFont,MyriadPro-Regular;
+        font-size: 18px;
+        color: #fff;
+    }
+    #signup .btn-2{
+        font-family: Poppins-Bold,AdobeInvisFont,MyriadPro-Regular;
+        font-size: 20px;
+        color: #014CD7;
+        background: #fff;
+        border:none;
+        width: 250px;
+        border-radius: 5px;
+    }
+    /***********************media Queries***************************/
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        #login-form{
+            position: relative;
+            z-index: 99;
+            right: 0%;
+        }
+        #signup{
+             position: relative;
+            left: 0%;
+            }
+    }
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        #login-form{
+            position: relative;
+            z-index: 99;
+            right: 0%;
+        }
+        #signup{
+            position: relative;
+           left: 0%;
+           }
+    }
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        #login-form{
+            position: relative;
+            z-index: 99;
+            right: 0%;
+        }
+        #signup{
+            position: relative;
+           left: 0%;
+           }
+    } 
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        #login-form{
+            position: absolute;
+            z-index: 99;
+            right: 45%;
+        }
+        #signup{
+            background-image: url(./images/Untitled-1.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            left: 50%;
+            }
+    } 
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        #login-form{
+            position: absolute;
+            z-index: 99;
+            right: 45%;
+        }
+        #signup{
+            background-image: url(./images/Untitled-1.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            left: 50%;
+            }
+    }
