@@ -78,7 +78,7 @@
     #login-form{
         position: absolute;
         z-index: 99;
-        right: 45%;
+        right: 54%;
     }
     #form-bg input::placeholder{
     font-size: 18px;
@@ -111,13 +111,14 @@
     text-align: center;
     border: none;
     border-radius: 5px;
+    width: 250px;
     }
     #signup{
     background-image: url(./images/Untitled-1.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: absolute;
-    left: 50%;
+    left: 36%;
     }
     #signup h1{
     font-family: Poppins-Bold,AdobeInvisFont,MyriadPro-Regular;
@@ -145,7 +146,7 @@
         color: #014CD7;
         background: #fff;
         border:none;
-        width: 250px;
+        width: 270px;
         border-radius: 5px;
     }
     /***********************media Queries***************************/
@@ -193,14 +194,14 @@
         #login-form{
             position: absolute;
             z-index: 99;
-            right: 45%;
+            right: 54%;
         }
         #signup{
             background-image: url(./images/Untitled-1.png);
             background-repeat: no-repeat;
             background-size: 100% 100%;
             position: absolute;
-            left: 50%;
+            left: 36%;
             }
     } 
     
@@ -209,13 +210,13 @@
         #login-form{
             position: absolute;
             z-index: 99;
-            right: 45%;
+            right: 54%;
         }
         #signup{
             background-image: url(./images/Untitled-1.png);
             background-repeat: no-repeat;
             background-size: 100% 100%;
             position: absolute;
-            left: 50%;
+            left: 36%;
             }
     }
