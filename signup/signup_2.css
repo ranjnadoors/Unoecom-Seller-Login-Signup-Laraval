@@ -105,7 +105,7 @@ font-family:Poppins-SemiBold,AdobeInvisFont,MyriadPro-Regular;
 color:#464646 !important ;
 text-align: end;
 }
-#form-bg .btn-1{
+/*#form-bg .btn-1{
 background-color: #0443C0 !important;
 font-size: 18px !important;
 font-family:Poppins-SemiBold,AdobeInvisFont,MyriadPro-Regular;
@@ -114,7 +114,56 @@ text-align: center;
 border: none;
 border-radius: 5px;
 width: 250px;
-}
+}*/
+
+#form-bg .btn-1{
+    font-family: Poppins-SemiBold,AdobeInvisFont,MyriadPro-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: #014CD7;
+    width: 280px;
+    height: 60px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #014cd7;
+    transition: all .5s;
+    z-index: 0;
+    border-radius: 5px;
+    }
+    #form-bg .btn-1:before{
+    content:"";
+    background: #014CD7;
+    width: 500%;
+    height: 690%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(-803px) rotate(45deg);
+    transition: all .5s ease-out;
+    z-index: 0;
+   
+    }
+    #form-bg .btn-1:hover:before{
+    transform: translate(-294px) rotate(45deg);
+    background: #014CD7;
+    color: #fff;
+    z-index: -5;
+   
+    
+    }
+    #form-bg .btn-1:hover:before{
+    z-index: -1;
+    
+    }
+    #form-bg .btn-1:hover{
+    color: #fff;
+    z-index: 99;
+    border: 2px solid #014CD7;
+    }
+   
 #signup{
 background-image: url(./images/Untitled-1.png);
 background-repeat: no-repeat;
@@ -143,7 +192,7 @@ font-family: OpenSans-Bold,AdobeInvisFont,MyriadPro-Regular;
 font-size: 18px;
 color: #fff;
 }
-#signup .btn-2{
+/*#signup .btn-2{
 font-family: Poppins-Bold,AdobeInvisFont,MyriadPro-Regular;
 font-size: 20px;
 color: #014CD7;
@@ -151,7 +200,65 @@ background: #fff;
 border:none;
 width: 270px;
 border-radius: 5px;
-}
+}*/
+
+#signup .btn-2{
+    font-family: Poppins-Bold,AdobeInvisFont,MyriadPro-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #014CD7;
+    width: 280px;
+    height: 60px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fff;
+    transition: all .5s;
+    z-index: 0;
+    border-radius: 5px;
+    }
+    #signup .btn-2:before{
+    content:"";
+    background: #014CD7;
+    width: 500%;
+    height: 690%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(-803px) rotate(45deg);
+    transition: all .5s ease-out;
+    z-index: 0;
+   border: transparent;
+    }
+    #signup .btn-2:hover:before{
+    transform: translate(-294px) rotate(45deg);
+    background: #014CD7;
+    color: #fff;
+    z-index: -5;
+    border: transparent;
+    
+    }
+    #signup .btn-2:hover:before{
+    z-index: -1;
+    border: transparent;
+    }
+    #signup .btn-2:hover {
+    color: #fff;
+    z-index: 99;
+    border: 2px solid #014CD7;
+    }
+    #signup .btn-2 .img-2{
+        display: none;  
+        }
+        #signup .btn-2:hover .img-2{
+        display: inline-block;  
+        transform: 0.6s;
+        }
+        #signup .btn-2:hover .img-1{
+        display: none;  
+        }
 /***********************media Queries***************************/
 /* Extra small devices (phones, 600px and down) */
 
