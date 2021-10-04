@@ -28,7 +28,7 @@ font-family:Poppins-SemiBold;
 }
 body{      
 cursor: pointer;
-overflow: hidden;
+overflow: hidden !important;
 }
 *{
 padding: 0;
@@ -271,6 +271,9 @@ border: transparent;
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+    body{
+        overflow: auto !important;
+    }
 .form{
 position: relative !important;
 right: 0% !important;
@@ -313,6 +316,9 @@ left: 0% !important;
 .img-height{
     height: auto !important;
 }
+body{
+    overflow: auto !important;
+}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -332,6 +338,10 @@ left: 43% !important;
     .img-height{
         height: 420px !important;
     }
+    body{
+        overflow: hidden !important;
+    }
+    
 }
 @media (min-width: 1920px) and (max-width: 2560px)  {
 #form-bg{

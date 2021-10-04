@@ -28,7 +28,7 @@ font-family:Poppins-SemiBold;
 }
 body{      
 cursor: pointer;
-overflow-y: hidden;
+overflow-y: hidden !important;
 }
 *{
 padding: 0;
@@ -283,6 +283,9 @@ height: 24px;
 #form-bg .form-check-input{
 width: 15px;
 }
+body{
+    overflow: auto!important;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -300,6 +303,9 @@ right: 0% !important;
 position: relative !important;
 left: 0% !important;
 }
+body{
+    overflow: auto!important;
+}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -316,7 +322,9 @@ left: 43% !important;
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-.example {background: pink;}
+    body{
+        overflow: hidden !important;
+    }}
 }
 @media (min-width: 1920px) and (max-width: 2560px)  {
 #form-bg{

@@ -28,7 +28,7 @@ font-family:Poppins-SemiBold;
 }
 body{      
 cursor: pointer;
-overflow: hidden;
+overflow: hidden !important;
 }
 *{
 padding: 0;
@@ -289,6 +289,10 @@ border-radius: 5px;
       #signup .img-height{
         height: auto !important;
     }
+    body{      
+      
+        overflow:auto !important;
+        }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -309,6 +313,10 @@ border-radius: 5px;
       #signup .img-height{
         height: auto !important;
     }
+    body{      
+      
+        overflow:auto !important;
+        }
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -328,6 +336,11 @@ border-radius: 5px;
     #signup .img-height{
         height: 420px !important;
     }
+    body{      
+      
+        overflow:hidden !important;
+        }
+
   }
   @media (min-width: 1920px) and (max-width: 2560px)  {
       #form-bg{
