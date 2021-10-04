@@ -28,6 +28,7 @@ font-family:Poppins-SemiBold;
 }
 body{      
 cursor: pointer;
+overflow: hidden;
 }
 *{
 padding: 0;
@@ -262,6 +263,9 @@ border: transparent;
     #signup .btn-2:hover .img-1{
     display: none;  
     }
+.img-height{
+    height: 420px;
+}
 
 /***********************media Queries***************************/
 /* Extra small devices (phones, 600px and down) */
@@ -286,6 +290,9 @@ height: 24px;
 #form-bg .form-check-input{
 width: 15px;
 }
+.img-height{
+    height: auto !important;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -303,6 +310,9 @@ right: 0% !important;
 position: relative !important;
 left: 0% !important;
 }
+.img-height{
+    height: auto !important;
+}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -319,7 +329,9 @@ left: 43% !important;
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-.example {background: pink;}
+    .img-height{
+        height: 420px !important;
+    }
 }
 @media (min-width: 1920px) and (max-width: 2560px)  {
 #form-bg{

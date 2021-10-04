@@ -28,6 +28,7 @@ font-family:Poppins-SemiBold;
 }
 body{      
 cursor: pointer;
+overflow: hidden;
 }
 *{
 padding: 0;
@@ -192,6 +193,9 @@ font-family: OpenSans-Bold,AdobeInvisFont,MyriadPro-Regular;
 font-size: 18px;
 color: #fff;
 }
+#signup .img-height{
+    height: 420px;
+}
 /*#signup .btn-2{
 font-family: Poppins-Bold,AdobeInvisFont,MyriadPro-Regular;
 font-size: 20px;
@@ -282,6 +286,9 @@ border-radius: 5px;
       #form-bg .form-check-input{
           width: 15px;
       }
+      #signup .img-height{
+        height: auto !important;
+    }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -299,6 +306,9 @@ border-radius: 5px;
           position: relative !important;
           left: 0% !important;
       }
+      #signup .img-height{
+        height: auto !important;
+    }
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -315,7 +325,9 @@ border-radius: 5px;
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
+    #signup .img-height{
+        height: 420px !important;
+    }
   }
   @media (min-width: 1920px) and (max-width: 2560px)  {
       #form-bg{

@@ -28,6 +28,7 @@ font-family:Poppins-SemiBold;
 }
 body{      
 cursor: pointer;
+overflow: hidden;
 }
 *{
 padding: 0;
@@ -172,6 +173,9 @@ background-size: 100% 100%;
 position: absolute;
 left: 44% !important;
 }
+#signup .img-height{
+    height: 420px;
+}
 #signup h1{
 font-family: Poppins-Bold,AdobeInvisFont,MyriadPro-Regular;
 color: #fff;
@@ -281,6 +285,9 @@ border: 2px solid #014CD7;
     #form-bg .form-check-input{
         width: 15px;
     }
+    .img-height{
+        height: auto !important;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -298,6 +305,9 @@ border: 2px solid #014CD7;
         position: relative !important;
         left: 0% !important;
     }
+    .img-height{
+        height: auto !important;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -314,7 +324,9 @@ border: 2px solid #014CD7;
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-.example {background: pink;}
+.img-height{
+    height: 420px !important;
+}
 }
 @media (min-width: 1920px) and (max-width: 2560px)  {
     #form-bg{
