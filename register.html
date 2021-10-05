@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="bootstrap/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <style>
@@ -12,10 +13,6 @@
             src: url(font/Open_Sans/OpenSans-Bold.ttf);
             font-family: OpenSans-Bold;
         }
-        @font-face{
-    src: url(./font/Poppins/Poppins-Regular.ttf);
-    font-family:Poppins-Regular;
-    }
     </style>
 </head>
 
@@ -23,15 +20,13 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-
-                <div class="col-lg-5 form px-0">
-
-                    <div class="my-3"><img src="images/login_03.jpg" class="img-fluid" alt=""></div>
+                <div class="col-lg-4 form px-md-0 px-0" id="">
+					<div class="my-3 logo mtop"><img src="images/Layer 8.svg" class="img-fluid" alt=""></div>
                     <div id="form-bg" class="my-5 py-5">
                         <h1 class="pt-5 text-uppercase">Register</h1>
                         <div class="mx-xl-5 px-3 mt-md-5 mt-3">
 
-                            <form action="signup_2.html" style="margin:auto">
+                            <form action="register-2.html" style="margin:auto">
                                
                                <div class="d-flex my-4">
                                 <div class="input-container mx-3">
@@ -40,34 +35,31 @@
                                         name="store">
                                 </div>
                                </div>
-                            <div class="text-center py-md-5 mb-lg-5"><a href="signup_2.html">
+                            <div class="text-center py-md-5 mb-lg-5"><a href="register-2.html">
                                     <button class="btn-1 px-3 py-3 text-uppercase">Check Availability</button></a></div>
                             </form>
                         </div>
                     </div>
-
                 </div>
-                <!---------------------------signup------------------------->
-                <div class="col-lg-6 pb-lg-5" id="signup">
-                    <div class="pt-md-3 pt-3 pb-md-3 pb-3 text-center">
-                        <h1 class="mt-md-5 py-4 ">Welcome to <span style="font-family:Poppins-Regular;">UNOECOM!</span> </h1>
+				<!------------ Blue Column ----------->
+                <div class="col-lg-5 pb-lg-5" id="signup">
+                    <div class="text-center">
+                        <h1 class="mt-5">Welcome to <span style="font-family:Poppins-Regular;">UNOECOM!</span></h1>
                         <h2>The Marketplace For All Your Stores</h2>
                     </div>
                     <div class="text-center">
-                        <h3 class="mb-3 mx-xl-0 mx-lg-3">Build your <span style="font-family: OpenSans-Bold;">
+                        <h3 class="my-3 mx-xl-0 mx-lg-3">Build your <span style="font-family: OpenSans-Bold;">
                                 FREE</span> Online Store
                             in Minutes</h3>
                     </div>
-                    <div class="my-3 text-center px-xl-0 px-lg-5"><img src="images/signicon.png" class="img-fluid  img-height"
+                    <div class="my-3 text-center px-xl-0 px-lg-5"><img src="images/signicon.png" class="img-fluid img-height"
                             alt="">
 
-                        <div class="text-center py-3"><a href="login.html"><button class="btn-2 px-5 py-3">
+                        <div class="text-center py-3"><button class="btn-2 px-5 py-3"> <a href="login.html">
                             <img src="images/signup_17.png" class="img-fluid mx-2 img-1">
-                                    <img src="images/door.png"
-                                    class="img-fluid mx-2 img-2">
-                                    LOG IN</button></a></div>
+                            <img src="images/door.png" class="img-fluid mx-2 img-2">
+                            LOG IN</button></a></div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -76,6 +68,6 @@
 <script src="bootstrap/js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="bootstrap/js/main.js"> </script>
+<script src="js/main.js"> </script>
 
 </html>

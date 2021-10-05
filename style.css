@@ -28,7 +28,7 @@ font-face{
     }
     body{      
     cursor: pointer;
-    overflow-y: hidden !important;
+    /*overflow-y: hidden !important;*/
     }
     *{
     padding: 0;
@@ -42,13 +42,18 @@ font-face{
     z-index: 99;
     right: 50%;
     }
+	
+	.logo img {
+		width:40%
+	}
+	
     #form-bg{
     background: #FFFFFF;
     box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.11);
     border-radius: 10px;
     }
     #form-bg h1{
-    font-size: 27px;
+    font-size: 24px;
     font-family:  Poppins-bold,AdobeInvisFont,MyriadPro-Regular;
     color: #464646;
     text-decoration: underline;
@@ -59,7 +64,7 @@ font-face{
     display: -ms-flexbox; /* IE10 */
     display: flex;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     border: 1px solid #fff;
     box-shadow: 0px 0px 11px rgba(0,108,110,.11);
     border-radius: 10px;
@@ -74,7 +79,8 @@ font-face{
     
     #form-bg .input-field {
     width: 100%;
-    padding: 10px;
+    /*padding: 10px;*/
+	padding: 10px;
     outline: none;
     border: 0px;
     }
@@ -87,7 +93,7 @@ font-face{
     right: 54%;
     }
     #form-bg input::placeholder{
-    font-size: 18px;
+    font-size: 16px;
     font-family:Poppins-medium-italic,AdobeInvisFont,MyriadPro-Regular ;
     color:#939598 ;
     }
@@ -95,23 +101,23 @@ font-face{
     outline: none;
     }
     #form-bg .form-check-label{
-    font-size: 18px;
+    font-size: 16px;
     font-family:Poppins-Regular,AdobeInvisFont,MyriadPro-Regular;
     color:#464646 ;
     }
     #form-bg .form-check-input{
-    width:16px;
-    height: 18px;
+    width:20px;
+    height: 22px;
     }
     #form-bg a{
-    font-size: 18px;
+    font-size: 16px;
     font-family:Poppins-SemiBold,AdobeInvisFont,MyriadPro-Regular;
     color:#464646 !important ;
     text-align: end;
     }
     /*#form-bg .btn-1{
     background-color: #0443C0 !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
     font-family:Poppins-SemiBold,AdobeInvisFont,MyriadPro-Regular;
     color:#fff ;
     text-align: center;
@@ -123,7 +129,7 @@ font-face{
     font-family: Poppins-SemiBold,AdobeInvisFont,MyriadPro-Regular;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
     color: #fff;
     width: 280px;
@@ -185,38 +191,35 @@ font-face{
     #signup h1{
     font-family:Poppins-Bold,AdobeInvisFont,MyriadPro-Regular;
     color: #fff;
-    font-size: 23px;
+    font-size: 26px;
     text-transform: uppercase;
     }
+	
+	#signup h1 span{
+		font-size: 34px;			
+	}
+	
     #signup h2{
     font-family:OpenSans-Regular,AdobeInvisFont,MyriadPro-Regular;
     color: #fff;
-    font-size: 22px;
+    font-size: 16px;
     }
     #signup h3{
     font-family:OpenSans-SemiBoldItalic,OpenSans-Regular,AdobeInvisFont,MyriadPro-Regular;
     color: #fff;
-    font-size: 25px;
+    font-size: 23px;
     }
     #signup h4{
     font-family:'OpenSans-Regular';
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     }
-    /*#signup .btn-2{
-    font-family: Poppins-Bold,AdobeInvisFont,MyriadPro-Regular;
-    font-size: 20px;
-    color: #014CD7;
-    background: #fff;
-    border:none;
-    width: 270px;
-    border-radius: 5px;
-    }*/
+  
     #signup .btn-2{
     font-family: Poppins-Bold,AdobeInvisFont,MyriadPro-Regular;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 26px;
     color: #014CD7;
     width: 280px;
@@ -229,7 +232,27 @@ font-face{
     z-index: 0;
     border-radius: 5px;
     }
-    #signup .btn-2:before{
+	
+	#signup .btn-3{
+    font-family: Poppins-Bold,AdobeInvisFont,MyriadPro-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #014CD7;
+    width: 280px;
+    height: 60px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fff;
+    transition: all .5s;
+    z-index: 0;
+    border-radius: 5px;
+    }
+    
+	
+	#signup .btn-2:before{
     content:"";
     background: #014CD7;
     width: 500%;
@@ -239,28 +262,30 @@ font-face{
     position: absolute;
     transform: translate(-803px) rotate(45deg);
     transition: all .5s ease-out;
-    z-index: 0;
-    
+    z-index: 0;    
+    }
+	#signup a{
+        color: #014cd7;
     }
     #signup .btn-2:hover:before{
     transform: translate(-294px) rotate(45deg);
     background: #014CD7;
     color: #fff;
-    z-index: -5;
-    
-    
+    z-index: -5;   
     }
     #signup .btn-2:hover:before{
     z-index: -1;
     
     }
-    #signup .btn-2:hover{
+    #signup .btn-2:hover a{
     color: #fff;
     z-index: 99;
     border: #014CD7;
     }
+	
+	
     #signup .img-height{
-        height: 420px !important;
+        height: 400px !important;
     }
     #signup .btn-2 .img-2{
         display: none;  
@@ -333,14 +358,15 @@ font-face{
     }
     #signup{
     position: absolute !important;
-    left: 43% !important;
+    left: 44% !important;
     }
     } 
     
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
         body{
-           overflow: hidden !important;
+           /*overflow: hidden !important;*/
+
         }
         #signup .img-height{
             height: 420px !important;
@@ -358,4 +384,29 @@ font-face{
     width: 923px;
     }
     }
+	
+	.loginicon img{
+		width:87%;
+	}
+	
+	.my-3.logo.mtop {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
     
+	.form-check-input {
+		    margin-top: .1rem !important;
+			margin-left: -2.25rem !important;
+	}
+	
+	.form-check {
+    padding-left: 2.25rem !important;
+}
+
+.rem_forgot {
+	margin-bottom:1rem !important;
+}
+
+.input-container .m-md-4 {
+    margin: 1.0rem!important;
+}
